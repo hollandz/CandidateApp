@@ -21,6 +21,9 @@
 		011BDFB919415F350057EAEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011BDF9B19415F350057EAEF /* UIKit.framework */; };
 		011BDFC119415F350057EAEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 011BDFBF19415F350057EAEF /* InfoPlist.strings */; };
 		011BDFC319415F350057EAEF /* CandidateAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 011BDFC219415F350057EAEF /* CandidateAppTests.m */; };
+		0125CFB819450BC000C8720C /* checkBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125CFB619450BC000C8720C /* checkBox.png */; };
+		0125CFB919450BC000C8720C /* checkBoxMarked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125CFB719450BC000C8720C /* checkBoxMarked.png */; };
+		013125B719467020001BF425 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013125B619467020001BF425 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		011BDFBE19415F350057EAEF /* CandidateAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CandidateAppTests-Info.plist"; sourceTree = "<group>"; };
 		011BDFC019415F350057EAEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		011BDFC219415F350057EAEF /* CandidateAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CandidateAppTests.m; sourceTree = "<group>"; };
+		0125CFB619450BC000C8720C /* checkBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBox.png; sourceTree = "<group>"; };
+		0125CFB719450BC000C8720C /* checkBoxMarked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBoxMarked.png; sourceTree = "<group>"; };
+		013125B619467020001BF425 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013125B719467020001BF425 /* MessageUI.framework in Frameworks */,
 				011BDF9A19415F350057EAEF /* CoreGraphics.framework in Frameworks */,
 				011BDF9C19415F350057EAEF /* UIKit.framework in Frameworks */,
 				011BDF9819415F350057EAEF /* Foundation.framework in Frameworks */,
@@ -101,6 +108,7 @@
 		011BDF9619415F350057EAEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				013125B619467020001BF425 /* MessageUI.framework */,
 				011BDF9719415F350057EAEF /* Foundation.framework */,
 				011BDF9919415F350057EAEF /* CoreGraphics.framework */,
 				011BDF9B19415F350057EAEF /* UIKit.framework */,
@@ -115,6 +123,8 @@
 				011BDFA619415F350057EAEF /* ZHAppDelegate.h */,
 				011BDFA719415F350057EAEF /* ZHAppDelegate.m */,
 				011BDFA919415F350057EAEF /* Main.storyboard */,
+				0125CFB619450BC000C8720C /* checkBox.png */,
+				0125CFB719450BC000C8720C /* checkBoxMarked.png */,
 				011BDFAC19415F350057EAEF /* ZHViewController.h */,
 				011BDFAD19415F350057EAEF /* ZHViewController.m */,
 				011BDFAF19415F350057EAEF /* Images.xcassets */,
@@ -230,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				011BDFB019415F350057EAEF /* Images.xcassets in Resources */,
+				0125CFB919450BC000C8720C /* checkBoxMarked.png in Resources */,
 				011BDFA219415F350057EAEF /* InfoPlist.strings in Resources */,
+				0125CFB819450BC000C8720C /* checkBox.png in Resources */,
 				011BDFAB19415F350057EAEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CandidateApp/CandidateApp-Prefix.pch";
 				INFOPLIST_FILE = "CandidateApp/CandidateApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CandidateApp/CandidateApp-Prefix.pch";
 				INFOPLIST_FILE = "CandidateApp/CandidateApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +471,7 @@
 				011BDFC819415F350057EAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		011BDFC919415F350057EAEF /* Build configuration list for PBXNativeTarget "CandidateAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				011BDFCB19415F350057EAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,7 +2,7 @@
 //  main.m
 //  CandidateApp
 //
-//  Created by Liana Miller on 6/5/14.
+//  Created by Deshaun Z. Holland on 6/5/14.
 //  Copyright (c) 2014 ZH. All rights reserved.
 //
 
